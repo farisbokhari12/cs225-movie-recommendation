@@ -1,0 +1,25 @@
+11/30/2020:
+We met this week briefly to discuss how we wanted to parse the data and next steps for the project.
+We've also implemented a graph class and uploaded a sample data set onto our github.
+We haven't done much coding this past week due to being on break.
+
+12/2/2020:
+We've decided on some design implementations.
+The user will input an Amazon Movie URL and we'll return the top 5 reviews based on helpfulness.
+
+Graph implementation for our data:
+With the movie review data, we've decided to make the vertices the ProductID + UserID.
+Every edges will represent a review and it will be weighted by the helpfulness score.
+
+12/4/2020:
+Decided to change our Graph to be an undirected graph that has the weights as the helpfulness and the rating.
+The graph is bipartite with one set of vertices as the movies and the other set reviewers.
+We have chosen to use Dijkstra to provide a movie recommendation based on a movie given by a user.
+The algorithm would find the shortest path between a movie and a reviewer that gave the movie a rating of 4 or higher
+and has a helpfulness score above 20.
+
+12/9/2020:
+Finished implementing Dijkstras and DFS algorithms for our project. Also finished making the File Parser and Graph maker.
+
+12/10/2020:
+Completed PageRank algorithm for movie recommendations and have formatted the way user inputs information and how we return information.

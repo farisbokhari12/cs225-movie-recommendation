@@ -1,0 +1,21 @@
+A one- to two-page final report describing the outcome of your project, including any discoveries made. Figures should be  
+in the same directory (if using MDs) or the same file (if using PDFs) but are not included in the page limit.
+
+When we took on this project, we set out with the goal of providing movie recommendations based on a dataset of Amazon movie reviews.
+Our implementations of PageRank and Dijkstra's provides a succesful recommendation system based on all the reviews' rating of the movie
+and the helpfulness of the reviews. In addition, we efficiently implemented a DFS algorithm to make sure that the dataset we used is valid.
+
+Through our testing of multiple different inputs, we've discovered that despite using only numerical measures for each movie,  
+the top recommendations for both algorithm's usually had at least 1 genre in common. This fact was extremely apparent for  
+movies with popular genres (e.g. action-romance) which resulted in a lot of movie recommendations being from the same genre.  
+
+Here's the output format for our 2 reccomendation algorithms:
+PageRank:
+[movieId] [PageRank rank]
+
+Dijkstra's:
+[movieId]
+
+(Note the movieID must match the same length as those provided in the dataset as all Amazon product ID's consist of the same length of 10).
+
+We've also included 2 screenshots of the output for each of the algorithms in this folder.
